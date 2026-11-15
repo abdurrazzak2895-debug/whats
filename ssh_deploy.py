@@ -2,7 +2,7 @@ import os, pty, select, time, sys
 
 HOST = "46.224.89.43"
 USER = "root"
-PASS = "X3PUXLmKUssx"
+PASS = os.environ["DEPLOY_SSH_PASSWORD"]
 
 # Generate SSH key if not exists
 key_path = os.path.expanduser("~/.ssh/id_ed25519")
